@@ -97,10 +97,5 @@ To get the project up and running on your machine, follow these steps:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/Johan901/workshop-002.git
-cd workshop-002 
-
-### 2. Set Up Docker and PostgreSQL
-Make sure you have **Docker** installed. Use the provided `docker-compose.yml` to spin up the necessary services (PostgreSQL, Airflow):
-
-```bash
-docker-compose up -d
+cd workshop-002
+```
