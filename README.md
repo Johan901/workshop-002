@@ -99,3 +99,55 @@ To get the project up and running on your machine, follow these steps:
 git clone https://github.com/Johan901/workshop-002.git
 cd workshop-002
 ```
+
+### 2. Set Up Docker and PostgreSQL
+Make sure you have **Docker** installed. Use the provided `docker-compose.yml` to spin up the necessary services (PostgreSQL, Airflow):
+
+```bash
+docker-compose up -d
+```
+
+### 3. Install Python Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the ETL Pipeline in Airflow
+```bash
+Access Airflow via the browser at http://localhost:8090
+```
+### 5. Visualize with Power BI
+Load the processed data from PostgreSQL into Power BI and create interactive dashboards.
+
+## 📊 Visualizations
+Using **Power BI**, we can create insightful visualizations such as:
+
+- **Top Spotify Artists by Grammy Wins** 🏆
+- **Audio Features of Grammy-Winning Tracks** 🎧
+- **Trends Over Time in Grammy Awards and Popularity** 📈
+
+These visualizations help showcase key insights from the merged Spotify and Grammy datasets.
+
+---
+
+## 💾 Final Output
+The final dataset is stored in:
+
+- **PostgreSQL database**: A table called `final_data` containing the merged data.
+- Optionally, a **CSV file**: The merged data is also exported as a CSV file.
+
+---
+
+## 🌟 Conclusion
+In this workshop, you built a complete ETL pipeline using **Apache Airflow** to extract, transform, and load data from multiple sources. You also used **PostgreSQL** to store the processed data and **Power BI** to visualize the results, showcasing your ability to manage and present data effectively.
+
+---
+
+## 🔗 Useful Links
+- [Apache Airflow Documentation](https://airflow.apache.org/docs/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [Power BI Documentation](https://docs.microsoft.com/en-us/power-bi/)
+
+---
+
+**Workshop 2: ETL Process Using Airflow** 💻🚀 | Made with 💙 by [Johan Hurtado Enríquez](https://github.com/Johan901) 👨‍💻
